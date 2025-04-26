@@ -20,11 +20,11 @@ public class User {
     @Column(name = "username",nullable = false, unique = true)
     private String username;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "firstName")
+    private String firstName;
 
-    @Column(name = "surname")
-    private String surname;
+    @Column(name = "lastName")
+    private String lastName;
 
     @Column(name = "email", nullable = false, unique = true)
     private String email;

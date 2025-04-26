@@ -1,4 +1,4 @@
-package com.ibrahim.financeManagement.Core.Utilities.Mappers;
+package com.ibrahim.financeManagement.Core.Mappers;
 
 import com.ibrahim.financeManagement.Business.Requests.BudgetRequest;
 import com.ibrahim.financeManagement.Business.Requests.CategoryRequest;
@@ -6,12 +6,16 @@ import com.ibrahim.financeManagement.Business.Requests.TransactionRequest;
 import com.ibrahim.financeManagement.Entities.Concretes.Budget;
 import com.ibrahim.financeManagement.Entities.Concretes.Category;
 import com.ibrahim.financeManagement.Entities.Concretes.Transaction;
+import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
+import org.springframework.stereotype.Service;
 
+@Service
+@AllArgsConstructor
 public class ModelMapperManager implements IModelMapperService {
 
-    private ModelMapper modelMapper = new ModelMapper();
+    private ModelMapper modelMapper;
 
     @Override
     public ModelMapper forRequest() {

@@ -1,4 +1,4 @@
-package com.ibrahim.financeManagement.Core.Utilities.Mappers;
+package com.ibrahim.financeManagement.Core.Mappers;
 
 import org.modelmapper.ModelMapper;
 
